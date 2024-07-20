@@ -137,5 +137,47 @@ for i in range(1,6):
 
 
 #nonlocal
+class example4:
+    def outerfunction(self):
+        a=5
+        def innerfunction(self):
+            nonlocal a
+            a=10
+            print("inner function",a)
+        innerfunction(self)
+        print("outer function",a)
+
+ob=example4()
+ob.outerfunction()
 
 
+#return
+class ex:
+    def function1(self):
+        b=10
+        return b
+    print("the",a)
+ab=ex()
+ab.function1()
+
+#while
+class whi:
+    i=5
+    while(i>0):
+        print(i)
+        i-=1
+
+#with 
+with open('example.txt','w') as my_file:
+    my_file.write('hello world')
+
+#yield
+
+class yie:
+    def generator(self):
+        for i in range(6):
+            yield i*i
+g=yie()
+res=g.generator()
+for i in  res:
+    print(i)
