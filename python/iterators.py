@@ -46,22 +46,25 @@ print(next(i))
 
 #infinate iterators
 class infinateiterators:
-    ''' clss implemention in iter and next methods in infinate iterators '''
+    ''' Class implementation with iter and next methods in infinite iterators '''
     
-
     def __iter__(self):
-        self.num=1
+        self.num = 1  # Start from 1
         return self
     
     def __next__(self):
-       num=self.num
-       self.num+=1
-       return num
+        num = self.num  # Store the current value
+        self.num += 1   # Increment for the next call
+        return num      # Return the current value
     
 print(infinateiterators.__doc__)
-i=iter(a)
-print(next(i))        
-print(next(i))
-print(next(i))
-print(next(i))
-print(next(i))
+
+# Create an iterator instance
+i = iter(infinateiterators())
+
+# Get and print the first five elements
+print(next(i))  # Outputs: 1
+print(next(i))  # Outputs: 2
+print(next(i))  # Outputs: 3
+print(next(i))  # Outputs: 4
+print(next(i))  # Outputs: 5
