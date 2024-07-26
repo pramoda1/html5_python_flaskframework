@@ -50,3 +50,16 @@ except TypeError as e:
 finally:
     print("complete")
 
+#user define exception
+class iam(Exception):
+     def __init__(self):
+         super()
+
+try:
+    a=120
+    if a>20 :
+        raise iam
+except iam as e:
+    print(e)
+else:
+    print('a is lesser then 20')
