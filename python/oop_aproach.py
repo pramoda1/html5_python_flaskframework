@@ -20,7 +20,7 @@ class myparrot:
         self.age=age
     
     def cansing(self):
-        return"{} can sing {}....".format(self.name,thissong)
+        return"{} can sing {}....".format(self.name)
     
     #my parrot class inheritang the attributes fromm the mybird class
 class mypenguin(mybird):
