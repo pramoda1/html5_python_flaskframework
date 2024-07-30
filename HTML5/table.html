@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Merges table borders */
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd; /* Light gray border */
+            padding: 8px; /* Cell padding */
+            text-align: left; /* Align text to the left */
+        }
+        th {
+            background-color: #f2f2f2; /* Light gray background for header */
+        }
+        tr:hover {
+            background-color: #f1f1f1; /* Highlight row on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Table Example</h1>
+
+    <h2>Employee Directory</h2>
+    <table>
+        <caption>List of Employees</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Department</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>Software Engineer</td>
+                <td>Development</td>
+                <td>$80,000</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>Project Manager</td>
+                <td>Management</td>
+                <td>$95,000</td>
+            </tr>
+            <tr>
+                <td>Mike Johnson</td>
+                <td>UX Designer</td>
+                <td>Design</td>
+                <td>$70,000</td>
+            </tr>
+            <tr>
+                <td>Emily Davis</td>
+                <td>Data Analyst</td>
+                <td>Analytics</td>
+                <td>$75,000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
