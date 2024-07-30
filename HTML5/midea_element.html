@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Elements Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        img, audio, video, iframe {
+            margin: 20px 0;
+            max-width: 100%; /* Responsive images/videos */
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Multimedia Elements Example</h1>
+
+    <h2>Image Example</h2>
+    <img src="https://example.com/image.jpg" alt="Description of the image" width="300">
+
+    <h2>Audio Example</h2>
+    <audio controls>
+        <source src="https://example.com/audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2>Video Example</h2>
+    <video width="640" height="360" controls poster="https://example.com/poster.jpg">
+        <source src="https://example.com/video.mp4" type="video/mp4">
+        <source src="https://example.com/video.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>IFrame Example</h2>
+    <iframe src="https://example.com" width="600" height="400" allowfullscreen></iframe>
+</body>
+</html>
